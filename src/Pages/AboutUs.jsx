@@ -24,7 +24,7 @@ function AboutUs() {
                         <img
                             id="test1"
                             style={{
-                                filter: "drop-shadow(0px 10px 10px rgb(0,0,0));"
+                                filter: "drop-shadow(0px 10px 10px rgb(0,0,0))"
                             }}
                             alt="about main image"
                             className="drop-shadow-2xl"
@@ -39,33 +39,7 @@ function AboutUs() {
                                                                     key={celebrity.slideNumber} 
                                                                     totalSlides={celebrities.length}
 
-                                                                />))} 
-                    <div id="slide4" className="carousel-item relative w-full">
-                        <div className="flex flex-col items-center justify-center gap-4 px-[15%]">
-                            <img src={steveJobs} className="w-40 rounded-full border-2 border-gray-400" />
-                            <p className="text-xl text-gray-200">
-                                {"We don't get a chance to do that many things, and every one should be really excellent."}
-                            </p>
-                            <h3 className="text-2xl font-semibold">Steve Jobs</h3>
-                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide3" className="btn btn-circle">❮</a> 
-                                <a href="#slide5" className="btn btn-circle">❯</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="slide5" className="carousel-item relative w-full">
-                         <div className="flex flex-col items-center justify-center gap-4 px-[15%]">
-                            <img src={billGates} className="w-40 rounded-full border-2 border-gray-400" />
-                            <p className="text-xl text-gray-200">
-                                {"ESuccess is a lousy teacher. It seduces smart people into thinking they can’t lose."}
-                            </p>
-                            <h3 className="text-2xl font-semibold">Bill Gates</h3>
-                            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                                <a href="#slide4" className="btn btn-circle">❮</a> 
-                                <a href="#slide1" className="btn btn-circle">❯</a>
-                            </div>
-                        </div>
-                    </div>
+                                                                />))}
                 </div>
 
 
