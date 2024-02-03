@@ -34,7 +34,7 @@
 
 ```
 
-    npm install -D tailwindcss
+    npm install -D tailwindcss postcss autoprefixer
 ```
 
 02. Create tailwind config file
@@ -48,7 +48,7 @@
 
 ```
 
-    "./src/**/*.{html,js, jsx, ts, tsx}"
+    "./src/**/*.{html,js, jsx, ts, tsx}", "./index.html",
 ```
 
 04. Add the tailwind directives at the top of the `index.css` file
@@ -58,6 +58,11 @@
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
+```
+05. Add the following details in the plugin property of tailwind config
+
+```
+    [require("daisyui"), require("@tailwindcss/line-clamp")]
 ```
 
 ### Adding plugins and dependencies
